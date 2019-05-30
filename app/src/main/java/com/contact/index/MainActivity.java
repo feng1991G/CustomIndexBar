@@ -122,6 +122,5 @@ public class MainActivity extends AppCompatActivity {
                 mDecoration.setmDatas(mList);
             }
         }, 200);
-
     }
 }
