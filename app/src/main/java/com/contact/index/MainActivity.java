@@ -1,6 +1,5 @@
 package com.contact.index;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.content.ContextCompat;
@@ -11,6 +10,7 @@ import android.util.TypedValue;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.contact.index.sidebar.IndexBar;
 import com.contact.index.sidebar.adapter.CustomAdapter;
@@ -69,7 +69,8 @@ public class MainActivity extends AppCompatActivity {
                         ll_more.setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
-                                startActivity(new Intent(MainActivity.this, CustomViewActivity.class));
+                                Toast.makeText(MainActivity.this, "我是header", Toast.LENGTH_SHORT).show();
+//                                startActivity(new Intent(MainActivity.this, CustomViewActivity.class));
                             }
                         });
                         break;
